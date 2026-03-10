@@ -1,16 +1,44 @@
-# React + Vite
+# React Counter Application (useState)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a simple Counter Application built using **React + Vite**. The application displays a number and allows the user to increase or decrease it using buttons. It demonstrates basic React concepts such as functional components, state management, and event handling.
 
-Currently, two official plugins are available:
+## Task
+Create a counter app that:
+- Displays a number on the screen
+- Has **Increment** and **Decrement** buttons
+- Updates the number when the buttons are clicked
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Folder Structure
+src
+├── components
+│ └── Counter.jsx
+├── App.jsx
+└── main.jsx
 
-## React Compiler
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## File Description
+- **main.jsx** – Entry point that renders the App component to the browser.
+- **App.jsx** – Root component that imports and displays the Counter component.
+- **Counter.jsx** – Contains the counter logic and UI using the `useState` hook.
 
-## Expanding the ESLint configuration
+## Concepts Used
+- React Functional Components  
+- `useState` Hook for state management  
+- Event Handling using `onClick`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Logic
+The counter value is stored using the `useState` hook with an initial value of **0**. When the **Increment** button is clicked, the value increases by 1. When the **Decrement** button is clicked, the value decreases by 1. Whenever the state changes, React automatically re-renders the component and updates the UI.
+
+## Functionalities
+- Increase counter value
+- Decrease counter value
+- Dynamic UI updates
+
+## Possible Improvements
+- Add a **Reset button**
+- Add **minimum/maximum value validation**
+- Separate UI elements into reusable components
+- Improve styling using CSS or frameworks like Tailwind
+
+
